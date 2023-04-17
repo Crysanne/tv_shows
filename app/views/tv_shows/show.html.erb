@@ -1,0 +1,26 @@
+<div class="container" data-controller="insert-in-list" data-insert-in-list-position-value="afterbegin">
+
+  <h1><%= @tv_show.title %> </h1>
+
+  <p><strong>Year</strong>: <%= @tv_show.year %></p>
+  <p><strong>Genre</strong>: <%= @tv_show.genre %></p>
+  <p><strong>Synopsis</strong>: <%= @tv_show.synopsis %></p>
+
+  <h2><%= pluralize @tv_show.reviews.size, "review" %></h2>
+
+  <%= render 'reviews/form', tv_show: @tv_show, review: @review %>
+
+  <div data-insert-in-list-target="items" >
+    <% if @tv_show.reviews.blank? %>
+      Be the first to leave a review for <%= @tv_show.title %>
+    <% else %>
+      <% @tv_show.reviews.each do |review| %>
+        <%= render 'tv_shows/review', review: review %>
+      <% end %>
+    <% end %>
+  </div>
+
+
+
+  <%= link_to "Back to all series", tv_shows_path %>
+</div>

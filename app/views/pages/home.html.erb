@@ -1,2 +1,88 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="banner_HP" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://res.cloudinary.com/don85v6ji/image/upload/v1681637596/7-13_xsf1or.jpg);">
+  <div class="home_container">
+    <h1>SERIES <strong></h1>
+    <p>Change your life and find your favourite series!</p>
+    <a class="btn btn-flat banner-btn" href="/tv_shows">Watch your favourite series now</a>
+  </div>
+
+  <div class="car container">
+  <div class="row justify-content-center">
+  <div class="col-sm-8 my-3">
+    <%= form_with url: tv_shows_path, method: :get, class: "d-flex" do %>
+      <%= text_field_tag :Title,
+            params[:Title],
+            class: "form-control",
+            placeholder: "Title"
+        %>
+        <%= text_field_tag :year,
+            params[:year],
+            class: "form-control",
+            placeholder: "Year"
+        %>
+        <%= text_field_tag :genre,
+            params[:genre],
+            class: "form-control",
+            placeholder: "Genre"
+        %>
+
+      <%= submit_tag "Search", name: "", class: "btn_form btn-primary" %>
+    <% end %>
+  </div>
+</div>
+</div>
+</div>
+<div class="card-group">
+  <div class="card">
+    <img src="https://res.cloudinary.com/don85v6ji/image/upload/v1681637596/download-1_pqbxem.jpg"  class="card-img-top img-fluid" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Spinning Out</h5>
+    </div>
+  </div>
+  <div class="card">
+    <img src="https://res.cloudinary.com/don85v6ji/image/upload/v1681637596/download-3_azxbom.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Virgin River</h5>
+
+    </div>
+  </div>
+  <div class="card">
+    <img src="https://res.cloudinary.com/don85v6ji/image/upload/v1681637596/download-2_t6mslv.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Selling Sunset</h5>
+
+    </div>
+  </div>
+</div>
+<div class="card-group">
+  <div class="card">
+    <img src="https://res.cloudinary.com/don85v6ji/image/upload/v1681637596/images-2_in8l13.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">The Crown</h5>
+
+    </div>
+  </div>
+  <div class="card">
+    <img src="https://res.cloudinary.com/don85v6ji/image/upload/v1681637596/images-1_lm3qfi.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Drive to Survive</h5>
+
+    </div>
+  </div>
+  <div class="card">
+    <img src="https://res.cloudinary.com/don85v6ji/image/upload/v1681637596/7-13_xsf1or.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Peaky Blinders</h5>
+
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="footer-links">
+    <a href="https://github.com/Crysanne?tab=repositories"><i class="fab fa-github"></i></a>
+    <a href="www.linkedin.com/in/crysanne-yiannopoulos"><i class="fab fa-linkedin"></i></a>
+  </div>
+  <div class="footer-copyright">
+    <a href="https://github.com/Crysanne tv_series">Crysanne Yiannopoulos</a>
+  </div>
+</div>

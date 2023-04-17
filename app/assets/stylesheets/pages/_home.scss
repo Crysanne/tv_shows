@@ -1,1 +1,90 @@
 // Specific CSS for your home-page
+body {
+  overflow: auto;
+}
+
+.banner_HP {
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+  text-align: center;
+}
+
+.banner_HP h1 {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.banner_HP p {
+  font-size: 20px;
+  color: white;
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.card-category_HP {
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+.banner-btn {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  font-weight: bold;
+  background: linear-gradient(#363738, #363738);
+  transition: background 0.3s ease;
+  border: 1px solid #363738;
+  text-align: center;
+}
+
+.banner-btn {
+  background: linear-gradient(#363738, #363738);
+  color: white;
+  text-align: center;
+}
+
+.btn_form {
+  color: white;
+  padding: 5px 24px;
+  border-radius: 4px;
+  font-weight: bold;
+  background: linear-gradient(#363738, #363738);
+  transition: background 0.3s ease;
+  border: 1px solid #363738;
+  text-align: center;
+  display: inline-block;
+  margin: none;
+}
+
+.footer {
+  background: #F4F4F4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  padding: 0px 50px;
+  color: rgba(0,0,0,0.3);
+}
+.footer-links {
+  display: flex;
+  align-items: center;
+}
+.footer-links a {
+  color: black;
+  opacity: 0.15;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 0px 10px;
+}
+.footer-links a:hover {
+  opacity: 1;
+}
+.footer .fa-heart {
+  color: #D23333;
+}

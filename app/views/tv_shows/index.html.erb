@@ -1,0 +1,21 @@
+<main class="container">
+  <h1 class="my-4">ALL SERIES</h1>
+  <p>All your favourite series on a single platform</p >
+
+  <div class="row">
+    <% @tv_shows.each do |tv_show| %>
+      <div class="col-md-4 col-lg-3 mb-4">
+        <div class="card h-100">
+          <%= link_to tv_show_path(tv_show) do %>
+            <%= image_tag tv_show.photo, alt:tv_show.title, class: "card-img-top" %>
+          <% end %>
+          <div class="card-body">
+            <h5 class="card-title"><%= tv_show.title %></h5>
+            <p class="card-text"><%= tv_show.year %></p >
+            <p class="card-text"><%= tv_show.genre %></p >
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</main>

@@ -1,0 +1,8 @@
+<<%= simple_form_for(tv_show) do |f| %>
+ <%= form.label :title %>
+  <%= form.text_field :title %>
+
+  <%= form.label :photo %>
+  <%= f.input :photo, as: :file %>
+   <%= form.submit %>
+<% end %>
